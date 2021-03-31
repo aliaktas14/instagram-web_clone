@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <CustomText tag="h1">profile</CustomText>
+    <CustomText tag="h1">Profile Post</CustomText>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 import CustomText from '../../components/CustomText.vue';
 
 export default {
-  name: "Profile",
+  name: "ProfilePost",
   components: {
     CustomText
   },

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "Text",
+  name: "CustomText",
   props: {
     tag: {
       type: String,

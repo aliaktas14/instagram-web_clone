@@ -1,31 +1,38 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
-    <CustomText>Hello World!</CustomText>
-    <IconHome width="60" height="60"/>
+    <CustomText tag="h1">Profile</CustomText>
+    <CustomText tag="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, sit, suscipit! Corporis, cum
+      cumque distinctio doloribus eius esse eum fugit ipsum, iusto minus odit provident quam ratione soluta tempore
+      voluptates?
+    </CustomText>
+
+
+    <div id="nav">
+      <router-link to="/profile/">Post</router-link>
+      |
+      <router-link to="/profile/igtv">IGTV</router-link>
+      |
+      <router-link to="/profile/save">Save</router-link>
+      |
+      <router-link to="/profile/tag">Tag</router-link>
+      <router-view/>
+    </div>
+
   </div>
 </template>
 
 <script>
 
-import CustomText from '../components/CustomText.vue';
-import IconHome from '../icons/home.svg';
+import CustomText from '../../components/CustomText.vue'
 
 export default {
-  name: "Home",
+  name: "Profile",
   components: {
-    CustomText,
-    IconHome
+    CustomText
   },
 };
 </script>
 
 <style scoped>
-h1 {
-  color: red;
 
-  @media (--t) {
-    color: blue;
-  }
-}
 </style>
